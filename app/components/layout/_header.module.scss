@@ -1,0 +1,44 @@
+@use "../../styles/base/variables" as v;
+
+.header {
+    background-color: v.$colorAzul;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+
+    .headerContainer {
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo_fematur {
+        margin: 0;
+        width: clamp(17rem, 20vw, 24rem);
+        height: auto;
+        padding: 12px;
+        grid-column: 2;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            color: v.$colorNaranja;
+            transition: color .2s ease-in;
+        }
+    }
+
+    .active {
+        color: v.$colorNaranja;
+    }
+}
